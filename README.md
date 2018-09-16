@@ -1,24 +1,37 @@
-# README
+# Microblogging sample application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a sample application that emulates Twitter and Mastodon, done
+following the steps detailed in [*Ruby on Rails Tutorial:
+Learn Web Development with Rails*](http://www.railstutorial.org/)
+by [Michael Hartl](http://www.michaelhartl.com/).
 
-Things you may want to cover:
+## License
 
-* Ruby version
+All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
+is available jointly under the MIT License and the Beerware License. See
+[LICENSE.md](LICENSE.md) for details.
 
-* System dependencies
+## Environment setup/Getting started
 
-* Configuration
+First clone the repo and install the needed gems:
+#+BEGIN_SRC sh
+$ bundle install --without production
+#+END_SRC
 
-* Database creation
+Next step, migrate the database:
+#+BEGIN_SRC sh
+$ rails db:migrate
+#+END_SRC
 
-* Database initialization
+Finally, run the test suite to check if everything is working as intended:
+#+BEGIN_SRC sh
+$ rails test
+#+END_SRC
 
-* How to run the test suite
+If all tests are passing, you're ready to run the app in the local server:
+#+BEGIN_SRC sh
+$ rails server
+#+END_SRC
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+For more information, see the
+[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
