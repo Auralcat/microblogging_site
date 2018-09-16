@@ -43,6 +43,8 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'minitest-reporters'
+  # To use assert_template in integration tests, you need this gem now.
+  gem 'rails-controller-testing'
 end
 
 group :development do
