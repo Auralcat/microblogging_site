@@ -1,8 +1,11 @@
 require 'test_helper'
 
 class UsersSignupTest < ActionDispatch::IntegrationTest
-  test 'invalid signup information' do
+  def setup
     get signup_path
+  end
+
+  test 'invalid signup information' do
     assert_no_difference 'User.count' do
       post users_path, params: { user: { name: '',
                                          email: 'user@invalid',
@@ -12,8 +15,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
   end
 
   test 'page has inputs and labels for each field in the model' do
-    get signup_path
-
     model_params = %w[name email password password_confirmation]
     model_params.each do |param|
       assert_select "#user_#{param}"
@@ -23,7 +24,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
 
   test 'shows 5 error messages when receiving blank input' do
     skip
-    get signup_path
     assert_select 'ul' do
       assert_select 'li', 5
     end
