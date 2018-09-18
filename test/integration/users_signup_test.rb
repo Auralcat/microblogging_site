@@ -28,4 +28,15 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
       assert_select 'li', 5
     end
   end
+
+  test 'valid user information' do
+    assert_difference 'User.count', 1 do
+      post users_path, params: { user: { name: 'Success',
+                                         email: 'valid.email@email.com',
+                                         password: 'supersecurepasswordwithoutstuff',
+                                         password_confirmation: 'supersecurepasswordwithoutstuff' } }
+    end
+    follow_redirect!
+    assert_template 'users/show'
+  end
 end
