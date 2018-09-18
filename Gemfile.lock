@@ -76,6 +76,9 @@ GEM
     formatador (0.2.5)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    gravatar-ultimate (2.0.0)
+      activesupport (>= 2.3.14)
+      rack
     guard (2.14.2)
       formatador (>= 0.2.4)
       listen (>= 2.7, < 4.0)
@@ -221,6 +224,7 @@ DEPENDENCIES
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  gravatar-ultimate
   guard
   guard-minitest
   jbuilder (~> 2.5)
