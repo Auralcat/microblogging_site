@@ -9,4 +9,19 @@ class UsersController < ApplicationController
     # and halts the loading of the page until you press C-d.
     # debugger
   end
+
+  def create
+    if @user.save
+      # Handle success
+    else
+      render 'new'
+    end
+  end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:name, :email, :password,
+                                 :password_confirmation)
+  end
 end
