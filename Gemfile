@@ -45,6 +45,8 @@ group :development, :test do
   gem 'minitest-reporters'
   # To use assert_template in integration tests, you need this gem now.
   gem 'rails-controller-testing'
+  # Generate test data
+  gem 'faker'
 end
 
 group :development do
