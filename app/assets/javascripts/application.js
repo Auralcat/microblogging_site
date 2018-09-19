@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// Add Bootstrap JS component here.
+//= require bootstrap
+//=
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .
