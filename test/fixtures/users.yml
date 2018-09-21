@@ -1,2 +1,12 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-# We don't need this for now.
+# Fixtures support ERB.
+
+miriam:
+    name: Miriam Retka
+    email: mretka@example.com
+    password_digest: <%= User.digest('password') %>
+
+michael:
+    name: Michael Example
+    email: michael@example.com
+    password_digest: <%= User.digest('password') %>
