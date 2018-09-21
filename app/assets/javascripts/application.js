@@ -11,6 +11,7 @@
 // about supported directives.
 //
 // Add Bootstrap JS component here.
+//= require jquery
 //= require bootstrap
 //=
 //= require rails-ujs
