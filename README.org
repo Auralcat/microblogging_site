@@ -1,17 +1,16 @@
-# Microblogging sample application
+* Microblogging sample application
 
 This is a sample application that emulates Twitter and Mastodon, done
-following the steps detailed in [*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](http://www.railstutorial.org/)
-by [Michael Hartl](http://www.michaelhartl.com/).
+following the steps detailed in [[http://www.railstutorial.org/][ *Ruby on Rails Tutorial: Learn Web Development with Rails* ]]
+by [[http://www.michaelhartl.com/][Michael Hartl]]
 
-## License
+** License
 
-All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/)
+All source code in the [[http://railstutorial.org/][Ruby on Rails Tutorial]]
 is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+[[LICENSE.md][LICENSE.md]] for details.
 
-## Environment setup/Getting started
+** Environment setup/Getting started
 
 First clone the repo and install the needed gems:
 #+BEGIN_SRC sh
@@ -33,5 +32,4 @@ If all tests are passing, you're ready to run the app in the local server:
 $ rails server
 #+END_SRC
 
-For more information, see the
-[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
+For more information, see the [[http://www.railstutorial.org/book][ *Ruby on Rails Tutorial* book]].
